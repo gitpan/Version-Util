@@ -1,0 +1,51 @@
+NAME
+    Version::Util - Version-number utilities
+
+VERSION
+    version 0.71
+
+DESCRIPTION
+    This module provides several convenient functions related to version
+    numbers, e.g. for comparing them.
+
+FUNCTIONS
+  cmp_version($v1, $v2) => -1|0|1
+    Equivalent to:
+
+     version->parse($v1) <=> version->parse($v2)
+
+  version_eq($v1, $v2) => BOOL
+  version_ne($v1, $v2) => BOOL
+  version_lt($v1, $v2) => BOOL
+  version_le($v1, $v2) => BOOL
+  version_gt($v1, $v2) => BOOL
+  version_ge($v1, $v2) => BOOL
+  version_between($v, $v1, $v2[, $v1b, $v2b, ...]) => BOOL
+  version_in($v, $v1[, $v2, ...]) => BOOL
+SEE ALSO
+    version
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Version-Util>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-Version-Util>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Version-Util>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
